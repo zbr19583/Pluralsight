@@ -4,7 +4,7 @@
     </head>
     <body>
         <header>
-            <div><img src="img/logo.gif" /></div>
+            <div><img src="champion.jpg" /></div>
             <div>This is a site to search Github for interesting projects.</div>
             <nav>
                 <ul>
@@ -15,7 +15,25 @@
             </nav>
         </header>
         <section>
-            <p>in this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github</a>projects <span> and the data</span> about <strong>those projects</strong></p>
+            <p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github</a> projects <span> and the data</span> about <strong>those projects.</strong></p>
+        
+            <form action="http://wilder.azurewebsites.net/echo">
+                <label for="searchPhrase">Search:</label><input name="searchPhrase" id="searchPhrase" /><br/>
+                <input type="checkbox" id="useStars" name="useStars" checked="true" /> 
+                
+                <label for="useStars">Use Stars?</label><br/>
+
+                <label for="langChoice">Language:</label><br/><select name="langChoice" id="langChoice">
+                    <option>All</option>
+                    <option>Java</option>
+                    <option selected>C#</option>
+                    <option>Ruby</option>
+                    <option>C++</option>
+                </select>
+                <br/>
+                <input type="submit" value="search" />
+            </form>
+        
         </section>
         <footer>
             &copy; 2017 BM international LLC
