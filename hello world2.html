@@ -1,6 +1,18 @@
 <html>
     <head>
         <title>Github Hub</title>
+        <link rel="stylesheet" href="site.css"/>
+
+        <!--javascript code -->
+        <script type="text/javascript">
+            var msg = "hello javascript";
+            alert(msg);
+            console(msg);
+
+            var resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "<p>This is from Javascript</p>";
+        </script>
+
     </head>
     <body>
         <header>
@@ -17,7 +29,7 @@
         <section>
             <p>In this <em>sample site</em>, we'll show a list of <a href="http://github.com">Github</a> projects <span> and the data</span> about <strong>those projects.</strong></p>
         
-            <form action="http://wilder.azurewebsites.net/echo">
+            <form id="main" action="http://wilder.azurewebsites.net/echo">
                 <label for="searchPhrase">Search:</label><input name="searchPhrase" id="searchPhrase" /><br/>
                 <input type="checkbox" id="useStars" name="useStars" checked="true" /> 
                 
